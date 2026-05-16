@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback | Shanza Electrical</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        
+        body { 
+            background-color: #02050a; color: #ffffff; 
+            display: flex; flex-direction: column; align-items: center; 
+            padding: 40px 20px; min-height: 100vh;
+        }
+
+        h1, h2 { 
+            font-family: 'Orbitron', sans-serif; color: #00d4ff; 
+            text-transform: uppercase; letter-spacing: 2px; text-align: center;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.5); 
+        }
+        
+        h1 { font-size: 32px; margin-bottom: 10px; }
+        p.subtitle { color: #a0aec0; margin-bottom: 40px; font-size: 14px; letter-spacing: 1px; }
+
+        /* --- BUSINESS CARDS DISPLAY --- */
+        .cards-container {
+            display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;
+            margin-bottom: 50px; width: 100%; max-width: 900px;
+        }
+
+        .business-card {
+            max-width: 350px; width: 100%;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+            transition: 0.4s;
+        }
+        
+        .business-card:hover {
+            border-color: #00d4ff;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+            transform: translateY(-5px);
+        }
+
+        /* --- CONTACT INFO SECTION --- */
+        .contact-info {
+            background: rgba(2, 5, 10, 0.85);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 30px; width: 100%; max-width: 800px;
+            text-align: center; margin-bottom: 50px;
+        }
+        .contact-info h3 { color: #fff; margin-bottom: 15px; letter-spacing: 1px; }
+        .contact-info p { color: #00d4ff; font-size: 22px; font-weight: 700; letter-spacing: 2px; }
+
+        /* --- FEEDBACK FORM --- */
+        .feedback-form {
+            background: rgba(2, 5, 10, 0.85); border: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 40px; width: 100%; max-width: 800px; margin-bottom: 50px;
+        }
+
+        .feedback-form h2 { font-size: 24px; margin-bottom: 30px; }
+
+        input, textarea {
+            width: 100%; padding: 15px; margin-bottom: 20px;
+            background: #010306; border: 1px solid #333; color: #fff;
+            font-size: 14px; transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none; border-color: #00d4ff; box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-submit {
+            width: 100%; padding: 15px; background: #00d4ff; color: #02050a;
+            border: none; font-weight: 800; text-transform: uppercase; letter-spacing: 2px;
+            cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn-submit:hover { box-shadow: 0 0 25px rgba(0, 212, 255, 0.8); background: #00b8e6; }
+
+        /* --- CREDITS SECTION --- */
+        .credits {
+            width: 100%; max-width: 800px; text-align: center;
+            border-top: 1px solid rgba(0, 212, 255, 0.2); padding-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .credits h3 { color: #00d4ff; font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 20px; }
+        
+        .developer { margin-bottom: 15px; }
+        .developer p.name { font-weight: 700; color: #fff; font-size: 16px; letter-spacing: 1px; }
+        .developer a.email { color: #a0aec0; text-decoration: none; font-size: 13px; transition: 0.3s; }
+        .developer a.email:hover { color: #00d4ff; }
+
+        /* --- BACK BUTTON --- */
+        .back-btn { 
+            display: inline-block; padding: 12px 30px; border: 2px solid #00d4ff; 
+            color: #00d4ff; text-decoration: none; font-weight: 700; 
+            text-transform: uppercase; font-size: 12px; letter-spacing: 2px; 
+            transition: 0.3s; 
+        }
+        .back-btn:hover { background: #00d4ff; color: #02050a; box-shadow: 0 0 20px rgba(0, 212, 255, 0.8); }
+
+    </style>
+</head>
+<body>
+
+    <h1>Contact HQ</h1>
+    <p class="subtitle">OFFICIAL COMMUNICATION & SUPPORT CHANNELS</p>
+
+    <div class="cards-container">
+        <img src="card.jpg" alt="Business Card 1" class="business-card">
+        <img src="card2.jpg" alt="Business Card 2" class="business-card">
+    </div>
+
+    <div class="contact-info">
+        <h3>DIRECT DISPATCH LINE</h3>
+        <p>+91 96195 78718</p>
+        <p style="color: #a0aec0; font-size: 12px; margin-top: 10px; letter-spacing: 1px;">OPERATIONAL HOURS: MON - SUN | 7:00 AM - 12:45 AM</p>
+
+    </div>
+
+    <div class="feedback-form">
+        <h2>Submit System Feedback</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="FULL NAME / COMPANY" required>
+            <input type="email" placeholder="EMAIL ADDRESS" required>
+            <textarea rows="5" placeholder="ENTER YOUR MESSAGE OR PROJECT REQUIREMENTS..." required></textarea>
+            <button type="submit" class="btn-submit">Transmit Data</button>
+        </form>
+    </div>
+
+    <div class="credits">
+        <h3>PROJECT ARCHITECTS</h3>
+        <div class="developer">
+            <p class="name">Saniya Abdul Qayyum Shaikh</p>
+            <a href="mailto:saniyasheikh9021@gmail.com" class="email">saniyasheikh9021@gmail.com</a>
+        </div>
+        <div class="developer">
+            <p class="name">Aafiya Amjad Bagwan</p>
+            <a href="mailto:amjadbagwan112@gmail.com" class="email">amjadbagwan112@gmail.com</a>
+        </div>
+    </div>
+
+    <a href="project.html" class="back-btn">Return to Main Grid ➔</a>
+
+</body>
+</html>
