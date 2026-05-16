@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Shanza Electrical</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- CORE STYLING --- */
+        * { 
+            margin: 0; padding: 0; box-sizing: border-box; 
+            font-family: 'Montserrat', sans-serif; 
+        }
+        
+        body { 
+            background-color: #02050a; 
+            color: #ffffff; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; 
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* --- HEADING --- */
+        h1 { 
+            font-family: 'Orbitron', sans-serif; color: #00d4ff; 
+            text-transform: uppercase; letter-spacing: 3px; margin-bottom: 40px; 
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.6); 
+            text-align: center;
+        }
+
+        /* --- NEON TABLE STYLING --- */
+        table { 
+            border-collapse: collapse; width: 100%; max-width: 900px; 
+            background: rgba(2, 5, 10, 0.85); 
+            border: 1px solid rgba(0, 212, 255, 0.3); 
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.15); 
+        }
+        
+        th, td { 
+            padding: 20px; text-align: left; 
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2); 
+            line-height: 1.6;
+        }
+        
+        th { 
+            font-size: 14px; text-transform: uppercase; letter-spacing: 2px; 
+            color: #02050a; background: #00d4ff; 
+            font-weight: 800;
+        }
+
+        /* --- ROW HOVER EFFECT --- */
+        tr { transition: 0.3s; }
+        tr:hover { 
+            background: rgba(0, 212, 255, 0.08); 
+        }
+
+        /* --- LINKS INSIDE TABLE --- */
+        td a { 
+            color: #cbd5e0; text-decoration: none; font-weight: 600; 
+            font-size: 14px; transition: 0.3s; display: block; 
+            white-space: nowrap;
+        }
+        td a:hover { 
+            color: #00d4ff; text-shadow: 0 0 10px rgba(0, 212, 255, 0.8); 
+            transform: translateX(5px);
+        }
+
+        /* --- BACK BUTTON --- */
+        .back-btn { 
+            margin-top: 50px; padding: 12px 30px; border: 2px solid #00d4ff; 
+            color: #00d4ff; text-decoration: none; font-weight: 700; 
+            text-transform: uppercase; font-size: 12px; letter-spacing: 2px; 
+            transition: 0.3s; 
+        }
+        .back-btn:hover { 
+            background: #00d4ff; color: #02050a; 
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.8); 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Electrical Solutions</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Service Category</th>
+                <th>Explore</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Core Electrical Contracting Services</td>
+                <td><a href="service1.html">View Details ➔</a></td>
+            </tr>
+            <tr>
+                <td>Industrial & Sector-Specific Electrical Solutions / Workforce & Labor Supply</td>
+                <td><a href="service2.html">View Details ➔</a></td>
+            </tr>
+            <tr>
+                <td>Electrical Installation & Modernization</td>
+                <td><a href="service3.html">View Details ➔</a></td>
+            </tr>
+            <tr>
+                <td>Testing, Safety & Consulting</td>
+                <td><a href="service4.html">View Details ➔</a></td>
+            </tr>
+            <tr>
+                <td>Specialized & Niche Electrical Services</td>
+                <td><a href="service5.html">View Details ➔</a></td>
+            </tr>
+            <tr>
+                <td>CCTV & Surveillance Solutions / Design & Planning</td>
+                <td><a href="service6.html">View Details ➔</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="project.html" class="back-btn">Return to Home</a>
+
+</body>
+</html>
