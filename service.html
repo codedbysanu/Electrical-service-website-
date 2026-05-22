@@ -31,38 +31,31 @@
         }
 
         /* --- NEON TABLE STYLING --- */
-        table { 
-            border-collapse: collapse; width: 100%; max-width: 900px; 
-            background: rgba(2, 5, 10, 0.85); 
-            border: 1px solid rgba(0, 212, 255, 0.3); 
-            box-shadow: 0 0 25px rgba(0, 212, 255, 0.15); 
-        }
-        
-        th, td { 
-            padding: 20px; text-align: left; 
-            border-bottom: 1px solid rgba(0, 212, 255, 0.2); 
-            line-height: 1.6;
-        }
-        
-        th { 
-            font-size: 14px; text-transform: uppercase; letter-spacing: 2px; 
-            color: #02050a; background: #00d4ff; 
-            font-weight: 800;
-        }
-
-        /* --- ROW HOVER EFFECT --- */
-        tr { transition: 0.3s; }
-        tr:hover { 
-            background: rgba(0, 212, 255, 0.08); 
-        }
-
-        /* --- LINKS INSIDE TABLE --- */
-        td a { 
-            color: #cbd5e0; text-decoration: none; font-weight: 600; 
-            font-size: 14px; transition: 0.3s; display: block; 
-            white-space: nowrap;
-        }
-        td a:hover { 
+       .services-grid {
+    display: flex; flex-wrap: wrap; gap: 20px;
+    justify-content: center; max-width: 900px; width: 100%;
+}
+.service-card {
+    background: rgba(0,212,255,0.05);
+    border: 1px solid rgba(0,212,255,0.3);
+    padding: 25px 30px; width: 100%; max-width: 420px;
+    transition: 0.3s;
+}
+.service-card:hover {
+    border-color: #00d4ff;
+    box-shadow: 0 0 20px rgba(0,212,255,0.4);
+    transform: translateY(-3px);
+}
+.service-card h3 {
+    color: #00d4ff; font-size: 14px;
+    letter-spacing: 1px; margin-bottom: 15px;
+}
+.service-card a {
+    color: #fff; text-decoration: none; font-size: 12px;
+    border: 1px solid #00d4ff; padding: 8px 16px;
+    display: inline-block; transition: 0.3s;
+}
+.service-card a:hover { background: #00d4ff; color: #02050a; }  { 
             color: #00d4ff; text-shadow: 0 0 10px rgba(0, 212, 255, 0.8); 
             transform: translateX(5px);
         }
@@ -84,40 +77,14 @@
 
     <h1>Our Electrical Solutions</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Service Category</th>
-                <th>Explore</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Core Electrical Contracting Services</td>
-                <td><a href="service1.html">View Details ➔</a></td>
-            </tr>
-            <tr>
-                <td>Industrial & Sector-Specific Electrical Solutions / Workforce & Labor Supply</td>
-                <td><a href="service2.html">View Details ➔</a></td>
-            </tr>
-            <tr>
-                <td>Electrical Installation & Modernization</td>
-                <td><a href="service3.html">View Details ➔</a></td>
-            </tr>
-            <tr>
-                <td>Testing, Safety & Consulting</td>
-                <td><a href="service4.html">View Details ➔</a></td>
-            </tr>
-            <tr>
-                <td>Specialized & Niche Electrical Services</td>
-                <td><a href="service5.html">View Details ➔</a></td>
-            </tr>
-            <tr>
-                <td>CCTV & Surveillance Solutions / Design & Planning</td>
-                <td><a href="service6.html">View Details ➔</a></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="services-grid">
+  <div class="service-card"><h3>Core Electrical Contracting Services</h3><a href="service1.html">View Details ➔</a></div>
+  <div class="service-card"><h3>Industrial & Sector-Specific Solutions</h3><a href="service2.html">View Details ➔</a></div>
+  <div class="service-card"><h3>Electrical Installation & Modernization</h3><a href="service3.html">View Details ➔</a></div>
+  <div class="service-card"><h3>Testing, Safety & Consulting</h3><a href="service4.html">View Details ➔</a></div>
+  <div class="service-card"><h3>Specialized & Niche Electrical Services</h3><a href="service5.html">View Details ➔</a></div>
+  <div class="service-card"><h3>CCTV & Surveillance Solutions</h3><a href="service6.html">View Details ➔</a></div>
+</div>
 
     <a href="project.html" class="back-btn">Return to Home</a>
 
