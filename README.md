@@ -3,7 +3,7 @@
 A multi-page business website built with pure HTML5 and CSS3.
 
 ## Live Site
-shanzaelectricalsolutions.netlify.app/project.html
+[Live Site](https://shanzaelectricalsolutions.netlify.app/project.html)
 
 ## Pages
 - project.html — Landing page with hero section and navigation
