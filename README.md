@@ -3,7 +3,7 @@
 A multi-page business website built with pure HTML5 and CSS3.
 
 ## Live Site
-https://brilliant-biscotti-be4330.netlify.app/project.html
+shanzaelectricalsolutions.netlify.app/project.html
 
 ## Pages
 - project.html — Landing page with hero section and navigation
