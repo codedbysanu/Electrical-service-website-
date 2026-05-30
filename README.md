@@ -1,4 +1,4 @@
-# Shanza Electrical Solutions — Business Website
+# Shanza Electrical Solutions - Business Website
 
 A multi-page business website built with pure HTML5 and CSS3.
 
@@ -6,10 +6,10 @@ A multi-page business website built with pure HTML5 and CSS3.
 [Live Site](https://shanzaelectricalsolutions.netlify.app/project.html)
 
 ## Pages
-- project.html — Landing page with hero section and navigation
-- service.html — Services overview table linking to 6 sub-pages
-- service1–6.html — Individual detailed service pages
-- contact.html — Contact info, business cards display, feedback form
+- project.html - Landing page with hero section and navigation
+- service.html - Services overview table linking to 6 sub-pages
+- service1–6.html - Individual detailed service pages
+- contact.html - Contact info, business cards display, feedback form
 
 ## Tech Stack
 - HTML5 (semantic structure, multi-page architecture)
