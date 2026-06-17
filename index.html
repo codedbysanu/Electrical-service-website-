@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="2BRvuGSHjSzkJnrQK00PUGufwN_95MqpbgRfn3ddhws" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanza Electrical Solution | Mumbai</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Orbitron:wght@600;800&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 1. CORE STYLING --- */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #02050a;
+            color: #ffffff;
+            overflow-x: hidden;
+            cursor: crosshair; /* Engineering feeling */
+        }
+
+        /* --- 2. PREMIUM HEADER --- */
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 8%;
+            background: rgba(2, 5, 10, 0.85);
+            backdrop-filter: blur(15px);
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 20px; letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { opacity: 0.7; } to { opacity: 1; }
+        }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a {
+            text-decoration: none; color: #cbd5e0; font-size: 13px;
+            text-transform: uppercase; letter-spacing: 1px;
+            position: relative; padding: 5px 0;
+        }
+
+        nav ul li a::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: 0; left: 0; background: #00d4ff;
+            box-shadow: 0 0 10px #00d4ff; transition: 0.4s;
+        }
+        nav ul li a:hover::after { width: 100%; }
+               .nav-cta {
+            border: 1px solid #00d4ff;
+            padding: 6px 16px !important;
+            border-radius: 4px;
+            color: #00d4ff !important;
+            box-shadow: 0 0 8px rgba(0, 212, 255, 0.4), inset 0 0 5px rgba(0, 212, 255, 0.2);
+            text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+            transition: 0.3s;
+        }
+        .nav-cta::after { display: none; }
+        .nav-cta:hover {
+            background: #00d4ff;
+            color: #02050a !important;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 1);
+            text-shadow: none;
+        }
+
+        
+        /* --- 3. THE "STARTING" HERO SECTION (AESTHETIC) --- */
+        .hero {
+            height: 100vh; width: 100vw;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center;
+            
+            background: linear-gradient(rgba(2, 5, 10, 0.9), rgba(2, 5, 10, 0.6)), url('image_0.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 5; max-width: 900px; padding: 20px;
+            animation: entryFade 1.5s ease-out;
+        }
+
+        @keyframes entryFade {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h4 {
+            color: #00d4ff; text-transform: uppercase; letter-spacing: 6px;
+            font-size: 12px; margin-bottom: 15px; font-weight: 700;
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 6vw, 70px); font-weight: 800;
+            margin-bottom: 25px; line-height: 1.1;
+        }
+
+        .aesthetic-word {
+            font-family: 'Cormorant Garamond', serif; font-style: italic;
+            color: #fff; border-bottom: 3px solid #00d4ff;
+        }
+
+        .hero p {
+            font-size: 18px; color: #a0aec0; margin-bottom: 40px;
+            line-height: 1.8; max-width: 600px; margin-inline: auto;
+        }
+
+        /* --- 4. INTERACTIVE BUTTONS WITH TOOLTIPS --- */
+        .hero-btns { display: flex; gap: 20px; justify-content: center; }
+
+        .btn-box { position: relative; }
+
+        .btn {
+            padding: 16px 35px; text-decoration: none; font-weight: 700;
+            text-transform: uppercase; font-size: 12px; letter-spacing: 2px;
+            transition: 0.3s; border-radius: 2px; display: inline-block;
+        }
+
+               .btn-fill { 
+            background: #00d4ff; 
+            color: #02050a; 
+            border: 2px solid #ffffff; 
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.9); 
+        }
+        .btn-fill:hover { 
+            background: #00b8e6;
+            border-color: #00d4ff;
+            color: #000000;
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 1); 
+        }
+        
+
+        .btn-line { border: 2px solid #fff; color: #fff; }
+        .btn-line:hover { border-color: #00d4ff; color: #00d4ff; }
+
+        /* Tooltip text */
+        .tooltip {
+            visibility: hidden; position: absolute; bottom: 130%; left: 50%;
+            transform: translateX(-50%) translateY(10px); background: #00d4ff;
+            color: #000; font-size: 10px; font-weight: 800; padding: 6px 12px;
+            white-space: nowrap; border-radius: 4px; opacity: 0; transition: 0.4s;
+        }
+        .btn-box:hover .tooltip { visibility: visible; opacity: 1; transform: translateX(-50%) translateY(0); }
+
+        /* --- 5. MOUSE SCROLL ANIMATION --- */
+              .scroll-icon {
+            position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+            display: flex; flex-direction: column; align-items: center; gap: 8px;
+        }
+        .scroll-text {
+            color: #00d4ff; font-size: 10px; font-weight: 700;
+            letter-spacing: 4px; text-transform: uppercase;
+            animation: glowText 1.5s infinite alternate;
+        }
+        @keyframes glowText {
+            from { opacity: 0.3; text-shadow: none; }
+            to { opacity: 1; text-shadow: 0 0 10px #00d4ff; }
+        }
+
+        .mouse-wheel {
+            width: 25px; height: 40px; border: 2px solid #00d4ff; border-radius: 15px;
+            position: relative;
+        }
+        .mouse-wheel::after {
+            content: ''; width: 4px; height: 8px; background: #00d4ff;
+            position: absolute; left: 50%; transform: translateX(-50%);
+            top: 7px; border-radius: 2px; animation: moveWheel 1.5s infinite;
+        }
+        @keyframes moveWheel {
+            0% { top: 7px; opacity: 1; } 100% { top: 20px; opacity: 0; }
+        }
+                /* --- ABOUT / EXPERIENCE SECTION --- */
+        .about-section {
+            padding: 80px 8%;
+            background: #010306;
+            display: flex;
+            justify-content: center;
+        }
+        .about-container {
+            max-width: 900px;
+            background: rgba(2, 5, 10, 0.6);
+            border-left: 4px solid #00d4ff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.05);
+        }
+        .about-text h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 26px;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .about-text p {
+            font-size: 15px;
+            color: #cbd5e0;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .about-text strong {
+            color: #fff;
+        }
+        
+
+        /* --- 6. FOOTER WITH EMAIL --- */
+        footer {
+            padding: 60px 8% 30px; background: #010306;
+            border-top: 1px solid rgba(0, 212, 255, 0.1);
+        }
+        .footer-content {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;
+        }
+        .footer-email {
+            display: inline-block; margin-top: 15px; padding: 10px 15px;
+            background: rgba(0, 212, 255, 0.1); border-left: 4px solid #00d4ff;
+            color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;
+        }
+        .footer-email:hover { background: #00d4ff; color: #000; }
+        
+        .socials { display: flex; gap: 15px; margin-top: 20px; }
+        .socials a { color: #555; text-decoration: none; font-size: 11px; font-weight: 700; }
+        .socials a:hover { color: #00d4ff; }
+
+        .copyright {
+            text-align: center; margin-top: 50px; font-size: 11px; color: #333;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SHANZA <span>ELECTRICAL SOLUTIONS</span></div>
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h4>Precision Engineering</h4>
+            <h1>Powering Your <span class="aesthetic-word">Vision</span> with Trust</h1>
+            <p>Reliable electrical solutions for residential, corporate, and hotels in Andheri West, Mumbai. Experience 100% satisfaction and quality.</p>
+            
+                <div class="hero-btns">
+                <div class="btn-box">
+                    <a href="service.html" class="btn btn-fill">View Our Services</a>
+                    <span class="tooltip">POWER UP YOUR GRID</span>
+                </div>
+                <div class="btn-box">
+                    <a href="mailto:shanza.electrical.solutions@gmail.com" class="btn btn-line">Get A Quote</a>
+                    <span class="tooltip">START A CONVERSATION</span>
+                </div>
+            </div>
+                </div>
+                <div class="scroll-icon">
+            <div class="mouse-wheel"></div>
+            <p class="scroll-text">Scroll Down</p>
+        </div>
+
+    </section>
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Expertise You Can <span class="aesthetic-word">Trust</span></h2>
+                <p>Led by an engineer with over 6 years of heavy infrastructure experience at Mumbai Metro (line 1) and a technical foundation from Fr. Conceicao Rodrigues College of Engineering in Bandra, <strong>Shanza Electrical Solutions</strong> brings industrial-grade precision directly to your doorstep.</p>
+                <p>Situated near Khoja jamat khana in Andheri West. we are a dependable, professional service provider offering a diverse range of customized electrical solutions. From the installation and maintenance of fans, lights, and doorbells to comprehensive wiring for residential buildings, corporate spaces, and hotels, our team executes every job with thorough precision.</p>
+                <p>Operating daily from <strong>7:00 AM to 12:45 AM</strong> to ensure maximum convenience, we maintain a strict commitment to efficiency, transparent service details, and top-quality solutions, reflected directly in our 100% client satisfaction guarantee.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="logo">SHANZA <span>ELECTRICAL SOLUTION</span></div>
+                <p style="color: #444; font-size: 13px; margin-top: 15px;">Near Khoja Jamat Khana, Andheri West, Mumbai. Professional engineering services since 2025. 
+               </p>
+            </div>
+            <div>
+                <h3 style="font-size: 14px; margin-bottom: 20px; color: #00d4ff;">DIRECT CONTACT</h3>
+                <a href="mailto:shanza.electrical.solutions@gmail.com" class="footer-email">shanza.electrical.solutions@gmail.com</a>
+                <div class="socials">
+                    <a href="mailto:shanza.electrical.solutions@gmail.com">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 SHANZA ELECTRICAL SOLUTIONS | ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+</body>
+</html>
